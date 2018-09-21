@@ -1,6 +1,6 @@
 from setuptools import setup
 setup(name='ecnunetwork',
-      version='1.0.0',
+      version='1.0.1',
       description='A script to connect to Internet at East China Normal University (ECNU).',
       keywords="ecnu",
       url='https://github.com/njzjz/ecnunetwork',

@@ -2,7 +2,7 @@ import json
 import os
 import requests
 class ecnunetwork(object):
-    def __init__(self,username=None,password=None,configfile=os.environ["HOME"]+"/.ecnunetwork"):
+    def __init__(self,username=None,password=None,configfile=os.path.join(os.path.expanduser('~'),".ecnunetwork")):
         self.username=username
         self.password=password
         self.configfile=configfile
