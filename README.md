@@ -9,15 +9,10 @@ A script to connect to the Internet at [East China Normal University](http://eng
 
 ## Installation
 
-### With pip
+Although you cannot connect to IPv4 servers before logining, IPv6 servers are still available, so you can use pip to install.
+
 ```sh
 $ pip install ecnunetwork
-```
-### Build from source
-```sh
-$ git clone https://github.com/njzjz/ecnunetwork.git
-$ cd ecnunetwork/
-$ python3 setup.py install
 ```
 
 ## Usage
