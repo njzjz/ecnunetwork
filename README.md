@@ -5,7 +5,7 @@ A script to connect to the Internet at [East China Normal University](http://eng
 
 **Author**: Jinzhe Zeng
 
-**Email**: njzjz@qq.com  10154601140@stu.ecnu.edu.cn
+**Email**: jzzeng@stu.ecnu.edu.cn
 
 ## Installation
 
