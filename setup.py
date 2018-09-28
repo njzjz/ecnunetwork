@@ -7,6 +7,7 @@ setup(name='ecnunetwork',
       author='Jinzhe Zeng',
       author_email='jzzeng@stu.ecnu.edu.cn',
       packages=['ecnunetwork'],
+      install_requires=['requests'],
       entry_points={
           'console_scripts':['ecnunetwork=ecnunetwork.commandline:main','network=ecnunetwork.commandline:main']
       }
