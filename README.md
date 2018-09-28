@@ -1,5 +1,5 @@
 # ecnunetwork
-[![python3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://badge.fury.io/py/ecnunetwork)[![pypi](https://badge.fury.io/py/ecnunetwork.svg)](https://badge.fury.io/py/ecnunetwork)
+[![python2.7](https://img.shields.io/badge/python-2.7-blue.svg)](https://badge.fury.io/py/ecnunetwork)[![python3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://badge.fury.io/py/ecnunetwork)[![pypi](https://badge.fury.io/py/ecnunetwork.svg)](https://badge.fury.io/py/ecnunetwork)
 
 A script to connect to the Internet at [East China Normal University](http://english.ecnu.edu.cn).
 
