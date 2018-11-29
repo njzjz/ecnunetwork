@@ -9,7 +9,6 @@ setup(name='ecnunetwork',
       packages=['ecnunetwork'],
       install_requires=['requests'],
       entry_points={
-          'console_scripts':['ecnunetwork=ecnunetwork.commandline:main','network=ecnunetwork.commandline:main']
+          'console_scripts': ['ecnunetwork=ecnunetwork.commandline:main', 'network=ecnunetwork.commandline:main']
       }
-)
-
+      )
