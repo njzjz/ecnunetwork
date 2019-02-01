@@ -1,0 +1,20 @@
+environment:
+  COVERALLS_REPO_TOKEN:
+    secure: WttRmg7lZ1ljvb70p5Z98HTZIuqJG4ZuHmHieI22wG74oCLFnFQWZk00xJNsQKgL
+  matrix:
+    - PYTHON: "C:\\Python37"
+      TOX_ENV: "py37"
+    - PYTHON: "C:\\Python36"
+      TOX_ENV: "py36"
+    - PYTHON: "C:\\Python35"
+      TOX_ENV: "py35"
+    - PYTHON: "C:\\Python27"
+      TOX_ENV: "py27"
+
+install:
+  - "%PYTHON%/Scripts/pip install tox"
+
+build: false
+
+test_script:
+  - "%PYTHON%/Scripts/tox -e %TOX_ENV%"
