@@ -3,6 +3,7 @@
 [![python version](https://img.shields.io/pypi/pyversions/ecnunetwork.svg?logo=python&logoColor=white)](https://pypi.org/project/ecnunetwork)
 [![PyPI](https://img.shields.io/pypi/v/ecnunetwork.svg)](https://pypi.org/project/ecnunetwork)
 [![Build Status](https://travis-ci.com/njzjz/ecnunetwork.svg?branch=master)](https://travis-ci.com/njzjz/ecnunetwork)
+[![Build status](https://ci.appveyor.com/api/projects/status/rr6dvs3wvvkg33dd?svg=true)](https://ci.appveyor.com/project/jzzeng/ecnunetwork)
 [![Coverage Status](https://coveralls.io/repos/github/njzjz/ecnunetwork/badge.svg?branch=master)](https://coveralls.io/github/njzjz/ecnunetwork?branch=master)
 [![codecov](https://codecov.io/gh/njzjz/ecnunetwork/branch/master/graph/badge.svg)](https://codecov.io/gh/njzjz/ecnunetwork)
 
