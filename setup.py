@@ -6,6 +6,7 @@ if __name__ == '__main__':
     this_directory = os.path.abspath(os.path.dirname(__file__))
     with open(os.path.join(this_directory, 'docs', 'README.md')) as f:
         long_description = f.read()
+    tests_require = ['pytest-sugar', 'pytest-cov', 'pytest-localserver']
     setup(
         name='ecnunetwork',
         description='A script to connect to Internet at East China Normal University (ECNU).',
@@ -33,5 +34,8 @@ if __name__ == '__main__':
         zip_safe=True,
         long_description=long_description,
         long_description_content_type='text/markdown',
-        tests_require=['pytest-sugar'],
+        tests_require=tests_require,
+        extras_require={
+            "test": tests_require,
+        },
     )
