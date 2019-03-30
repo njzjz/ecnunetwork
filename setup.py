@@ -13,7 +13,7 @@ if __name__ == '__main__':
         keywords="ecnu", url='https://github.com/njzjz/ecnunetwork',
         author='Jinzhe Zeng', author_email='jzzeng@stu.ecnu.edu.cn',
         packages=find_packages(),
-        install_requires=['requests'],
+        install_requires=['requests', 'six'],
         entry_points={
             'console_scripts':
             ['ecnunetwork=ecnunetwork.commandline:main',
