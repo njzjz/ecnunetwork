@@ -1,8 +1,5 @@
 from __future__ import print_function, division, absolute_import, unicode_literals
-try:
-    input = raw_input
-except NameError:
-    pass
+from six.moves import input
 
 import json
 import os
