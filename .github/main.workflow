@@ -20,5 +20,5 @@ workflow "Test" {
 }
 
 action "Test with tox" {
-  uses = "tox-dev/gh-action-tox@master"
+  uses = "njzjz/actions/tox-conda@master"
 }
