@@ -15,19 +15,20 @@ class ecnunetwork:
                      "password": "Please input your password: "}
     MESSAGE_RETRY = "Retry? [Y/n] "
     MESSAGE_SAVE = "Save password? [Y/n] "
-    
+
     def __init__(self, username=None, password=None, configfile=None):
         self._initconfig(username, password)
         self._readpassword()
-        self.configfile = configfile or os.path.join(os.path.expanduser('~'), ".ecnunetwork")
+        self.configfile = configfile or os.path.join(
+            os.path.expanduser('~'), ".ecnunetwork")
 
     def _initconfig(self, username=None, password=None):
         self.config = {"username": username, "password": password}
-        
+
     def connect(self):
         self._inputpassword()
         r = requests.post(self.URL, data={"action": "login", "ajax": 1, "ac_id": 1,
-                  "username": self.config["username"], "password": self.config["password"]})
+                                          "username": self.config["username"], "password": self.config["password"]})
         logging.debug(r.text)
         if r.text.startswith("login_ok"):
             logging.info(self.MESSAGE_OK)
@@ -56,10 +57,11 @@ class ecnunetwork:
             with open(self.configfile, 'w') as f:
                 json.dump(self.config, f)
             self._config = self.config
-            
+
     def _checkyes(self, message):
         yorn = input(message)
         return yorn in ["", "Y", "y", "yes"]
+
 
 if __name__ == '__main__':
     ecnunetwork().connect()
