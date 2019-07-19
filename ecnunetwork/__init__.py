@@ -8,7 +8,6 @@ import logging
 
 
 class ecnunetwork:
-    URL = "https://login.ecnu.edu.cn/include/auth_action.php"
     MESSAGE_OK = "Successfully connected to the Internet."
     MESSAGE_FAIL = "Fail to login. Maybe your id or password is wrong."
     MESSAGE_INPUT = {"username": "Please input your ECNU id: ",
@@ -21,13 +20,14 @@ class ecnunetwork:
         self._readpassword()
         self.configfile = configfile or os.path.join(
             os.path.expanduser('~'), ".ecnunetwork")
+        self.url = "https://login.ecnu.edu.cn/include/auth_action.php"
 
     def _initconfig(self, username=None, password=None):
         self.config = {"username": username, "password": password}
 
     def connect(self):
         self._inputpassword()
-        r = requests.post(self.URL, data={"action": "login", "ajax": 1, "ac_id": 1,
+        r = requests.post(self.url, data={"action": "login", "ajax": 1, "ac_id": 1,
                                           "username": self.config["username"], "password": self.config["password"]})
         logging.debug(r.text)
         if r.text.startswith("login_ok"):
