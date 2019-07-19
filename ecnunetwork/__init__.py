@@ -58,7 +58,8 @@ class ecnunetwork:
                 json.dump(self.config, f)
             self._config = self.config
 
-    def _checkyes(self, message):
+    @classmethod
+    def _checkyes(cls, message):
         yorn = input(message)
         return yorn in ["", "Y", "y", "yes"]
 
