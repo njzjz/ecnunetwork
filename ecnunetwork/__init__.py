@@ -6,6 +6,8 @@ import os
 import requests
 import logging
 
+logging.basicConfig(level=logging.DEBUG)
+
 
 class ecnunetwork:
     MESSAGE_OK = "Successfully connected to the Internet."
@@ -16,11 +18,11 @@ class ecnunetwork:
     MESSAGE_SAVE = "Save password? [Y/n] "
 
     def __init__(self, username=None, password=None, configfile=None):
-        self._initconfig(username, password)
-        self._readpassword()
         self.configfile = configfile or os.path.join(
             os.path.expanduser('~'), ".ecnunetwork")
         self.url = "https://login.ecnu.edu.cn/include/auth_action.php"
+        self._initconfig(username, password)
+        self._readpassword()
 
     def _initconfig(self, username=None, password=None):
         self.config = {"username": username, "password": password}
