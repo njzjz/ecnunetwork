@@ -1,0 +1,13 @@
+on: release
+name: Release to pypi
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: publish
+      uses: mariamrf/py-package-publish-action@master
+      env:
+        PYTHON_VERSION: 3.7.3
+        TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
+        TWINE_USERNAME: ${{ secrets.TWINE_USERNAME }}
